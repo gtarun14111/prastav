@@ -77,7 +77,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
-  background: rgba(77, 0, 0, 0.9);
+  background: #dc3545;
 }
 
 #header.header-transparent {
@@ -85,7 +85,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header.header-scrolled {
-  background: rgba(77, 0, 0, 0.9);
+  background: #dc3545;
 }
 
 #header .logo h1 {
@@ -128,6 +128,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar li {
   position: relative;
+  text-decoration: none;
 }
 
 .navbar a {
@@ -150,8 +151,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar a:hover, .navbar .active, .navbar li:hover > a {
-  background: #ef6603;
-  color: #fff;
+  background: #fff;
+  color: #dc3545;
+  text-decoration: none;
 }
 
 .navbar .dropdown ul {
@@ -245,7 +247,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(20, 21, 28, 0.9);
+  background: #dc3545;
   transition: 0.3s;
   z-index: 999;
 }
@@ -325,6 +327,9 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
   position: relative;
   background: linear-gradient(0deg, #b30000 0%, #4d0000 100%);
+  background-image: url("../img/bg.jpg");
+  background-position: center center;
+  background-size: cover;
   padding: 0;
 }
 
@@ -335,7 +340,7 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   text-align: center;
   position: relative;
-  height: 70vh;
+  height: calc(100vw*183/275);
   padding-top: 60px;
 }
 
@@ -408,7 +413,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 28px;
   }
 }
-
+/**
 .hero-waves {
   display: block;
   width: 100%;
@@ -490,6 +495,7 @@ h1, h2, h3, h4, h5, h6 {
     transform: translate(85px, 0%);
   }
 }
+*/
 
 /*--------------------------------------------------------------
 # Sections General
