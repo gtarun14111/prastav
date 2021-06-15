@@ -1,3 +1,23 @@
+<?php 
+if(isset($_POST['submit'])){
+    $to = "gtarun14111@gmail.com"; // this is your Email address
+    $from = $_POST['email']; // this is the sender's Email address
+    $name = $_POST['name'];
+    $subject = "Form submission";
+    $subject2 = "Copy of your form submission";
+    $message = $name . " has sent a mail:" . "\n\n" . $_POST['subject'] . "\n\n" . $_POST['message'];
+    $message2 = "Here is a copy of your message " . "\n\n" . $_POST['subject'] . "\n\n" . $_POST['message'];
+
+    $headers = "From:" . $from;
+    $headers2 = "From:" . $to;
+    mail($to,$subject,$message,$headers);
+    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
+    echo "Mail Sent. Thank you " . $name . ", we will contact you shortly.";
+    // You can also use header('Location: thank_you.php'); to redirect to another page.
+    // You cannot use header and echo together. It's one or the other.
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -548,7 +568,7 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0" data-aos="fade-left">
 
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
