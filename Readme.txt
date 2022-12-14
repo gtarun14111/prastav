@@ -1,6 +1,1 @@
-Thanks for downloading this template!
-
-Template Name: Selecao
-Template URL: https://bootstrapmade.com/selecao-bootstrap-template/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
+This project is made using Bootstrap it uses simple custom animation and is made for a simple college club.
